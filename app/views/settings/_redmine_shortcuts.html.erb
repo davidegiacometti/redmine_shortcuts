@@ -1,0 +1,16 @@
+<table>
+  <tbody>
+    <tr>
+      <th>Enable issue shortcuts</th>
+      <td>
+        <%= check_box_tag("settings[enable_issue_shortcuts]", "1", @settings['enable_issue_shortcuts'].to_s == "1" ) %>
+      </td>
+    </tr>
+    <tr>
+      <th>Enable editor shortcuts</th>
+      <td>
+        <%= check_box_tag("settings[enable_editor_shortcuts]", "1", @settings['enable_editor_shortcuts'].to_s == "1" ) %>
+      </td>
+    </tr>
+  </tbody>
+</table>

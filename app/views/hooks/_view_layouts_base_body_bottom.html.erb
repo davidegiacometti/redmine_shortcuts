@@ -1,0 +1,7 @@
+<% if Setting.plugin_redmine_shortcuts['enable_editor_shortcuts'] == '1' %>
+  <% if Setting['text_formatting'] == 'textile' %>
+    <%= javascript_include_tag 'view_layouts_base_body_bottom_textile', :plugin => 'redmine_shortcuts' %>
+  <% elsif Setting['text_formatting'] == 'markdown' %>
+    <%= javascript_include_tag 'view_layouts_base_body_bottom_markdown', :plugin => 'redmine_shortcuts' %>
+  <% end %>
+<% end %>
