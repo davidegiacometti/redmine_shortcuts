@@ -1,0 +1,4 @@
+# German strings go here for Rails i18n
+de:
+  shortcuts_settings_enable_in_issues: "Aktiviere Tastenkürzel in Tickets"
+  shortcuts_settings_enable_in_editor: "Aktiviere Tastenkürzel im Editor"

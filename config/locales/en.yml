@@ -1,3 +1,4 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  shortcuts_settings_enable_in_issues: Enable issue shortcuts
+  shortcuts_settings_enable_in_editor: Enable editor shortcuts
