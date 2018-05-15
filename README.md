@@ -26,7 +26,7 @@ Any feedback will be appreciated.
 ## Installation
 Just download the latest release of this plugin and extract in #{RAILS_ROOT}/plugins, no migrations or gem installation required. Restart Redmine.
 
-##Contributors
+## Contributors
 * **[tofi86](https://github.com/tofi86)**
 
 
