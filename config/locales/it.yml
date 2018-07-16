@@ -1,5 +1,5 @@
 # Italian strings go here for Rails i18n
-en:
+it:
   shortcuts_settings_enable_in_issues: Abilita scorciatoie nelle segnalazioni
   shortcuts_settings_enable_in_editor: Abilita scorciatoie nell'editor
   shortcuts_settings_enable_help_link: Abilita link aiuto
