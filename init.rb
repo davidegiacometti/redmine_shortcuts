@@ -8,5 +8,7 @@ Redmine::Plugin.register :redmine_shortcuts do
   url 'https://github.com/davidegiacometti/redmine_shortcuts'
   author_url 'https://github.com/davidegiacometti'
 
-  settings :partial => 'settings/redmine_shortcuts', :default => {'enable_issue_shortcuts' => '1', 'enable_editor_shortcuts' => '1'}
+  settings :partial => 'settings/redmine_shortcuts', :default => {'enable_issue_shortcuts' => '1', 'enable_editor_shortcuts' => '1', 'enable_help_link' => '1'}
+
+  menu :top_menu, :redmine_shortcuts, {:controller => 'help', :action => 'index'}, :caption => 'Shortcuts', :last => true, :if => Proc.new { Setting.plugin_redmine_shortcuts['enable_help_link'].to_s == '1' }
 end

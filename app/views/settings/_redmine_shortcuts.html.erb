@@ -1,15 +1,21 @@
 <table>
   <tbody>
     <tr>
-      <th><%= l(:shortcuts_settings_enable_in_issues) %></th>
+      <td><b><%= l(:shortcuts_settings_enable_in_issues) %></b></td>
       <td>
-        <%= check_box_tag("settings[enable_issue_shortcuts]", "1", @settings['enable_issue_shortcuts'].to_s == "1" ) %>
+        <%= check_box_tag('settings[enable_issue_shortcuts]', '1', @settings['enable_issue_shortcuts'].to_s == '1' ) %>
       </td>
     </tr>
     <tr>
-      <th><%= l(:shortcuts_settings_enable_in_editor) %></th>
+      <td><b><%= l(:shortcuts_settings_enable_in_editor) %></b></td>
       <td>
-        <%= check_box_tag("settings[enable_editor_shortcuts]", "1", @settings['enable_editor_shortcuts'].to_s == "1" ) %>
+        <%= check_box_tag('settings[enable_editor_shortcuts]', '1', @settings['enable_editor_shortcuts'].to_s == '1' ) %>
+      </td>
+    </tr>
+        <tr>
+      <td><b><%= l(:shortcuts_settings_enable_help_link) %></b></td>
+      <td>
+        <%= check_box_tag('settings[enable_help_link]', '1', @settings['enable_help_link'].to_s == '1' ) %>
       </td>
     </tr>
   </tbody>
