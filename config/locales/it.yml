@@ -3,3 +3,20 @@ it:
   shortcuts_settings_enable_in_issues: Abilita scorciatoie nelle segnalazioni
   shortcuts_settings_enable_in_editor: Abilita scorciatoie nell'editor
   shortcuts_settings_enable_help_link: Abilita link aiuto
+  shortcuts_settings_help_link_label: Etichetta link aiuto
+  shortcuts_help_title: Guida Rapida Redmine Shortcuts
+  shortcuts_help_issue_index: Elenco segnalazioni
+  shortcuts_help_issue_show: Segnalazione
+  shortcuts_help_editor: Editor
+  shortcuts_help_new_issue: Nuova
+  shortcuts_help_copy_issue: Copia
+  shortcuts_help_delete_issue: Elimina (delete)
+  shortcuts_help_edit_issue: Modifica (edit)
+  shortcuts_help_log_time_issue: Registra tempo (log time)
+  shortcuts_help_quote_issue: Quota
+  shortcuts_help_unwatch_issue: Dimentica (unwatch)
+  shortcuts_help_watch_issue: Osserva (watch)
+  shortcuts_help_strong: Grassetto (strong)
+  shortcuts_help_italic: Corsivo (italic)
+  shortcuts_help_underline: Sottolineato (underline)
+  shortcuts_help_deleted: Barrato (deleted)

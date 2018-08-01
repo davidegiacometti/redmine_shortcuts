@@ -6,36 +6,33 @@
     <%= stylesheet_link_tag 'help.css', :plugin => 'redmine_shortcuts' %>
   </head>
   <body>
-    <h1>Shortcuts Reference</h1>
-      <table style="width:100%">
-      <tr><th colspan="3">On issue index</th></tr>
-      <tr><th><td style="width:50%;">N</td><td style="width:50%;">New issue</td></tr>
-      </table>
-      <table style="width:100%">
-      <tr><th colspan="3">On issue show</th></tr>
-      <tr><th><td style="width:50%;">C</td><td style="width:50%;">Copy issue</td></tr>
-      <tr><th><td style="width:50%;">D</td><td style="width:50%;">Delete issue</td></tr>
-      <tr><th><td style="width:50%;">E</td><td style="width:50%;">Edit issue</td></tr>
-      <tr><th><td style="width:50%;">L</td><td style="width:50%;">Log time on issue</td></tr>
-      <tr><th><td style="width:50%;">Q</td><td style="width:50%;">Quote issue</td></tr>
-      <tr><th><td style="width:50%;">U</td><td style="width:50%;">Unwatch issue</td></tr>
-      <tr><th><td style="width:50%;">W</td><td style="width:50%;">Watch issue</td></tr>
-      </table>
-    <% if @text_formatting == 'textile' %>
-      <table style="width:100%">
-      <tr><th colspan="3">Editor (<%= @text_formatting.capitalize %>)</th></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong>Strong</strong></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em>Italic</em></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_ins.png" style="border: 1px solid #bbb;" alt="Underline" /></th><td>CTRL + U</td><td><ins>Underline</ins></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del>Deleted</del></td></tr>
-      </table>
-    <% elsif @text_formatting == 'markdown' %>
-      <table style="width:100%">
-      <tr><th colspan="3">On editor (<%= @text_formatting.capitalize %>)</th></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong>Strong</strong></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em>Italic</em></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del>Deleted</del></td></tr>
-      </table>
-    <% end %>
+    <h1><%= l(:shortcuts_help_title) %></h1>
+    <table style="width:100%">
+      <tr><th colspan="3"><%= l(:shortcuts_help_issue_index) %></th></tr>
+      <tr><th><td style="width:50%;">N</td><td style="width:50%;"><%= l(:shortcuts_help_new_issue) %></td></tr>
+    </table>
+    <table style="width:100%">
+      <tr><th colspan="3"><%= l(:shortcuts_help_issue_show) %></th></tr>
+      <tr><th><td style="width:50%;">C</td><td style="width:50%;"><%= l(:shortcuts_help_copy_issue) %></td></tr>
+      <tr><th><td style="width:50%;">D</td><td style="width:50%;"><%= l(:shortcuts_help_delete_issue) %></td></tr>
+      <tr><th><td style="width:50%;">E</td><td style="width:50%;"><%= l(:shortcuts_help_edit_issue) %></td></tr>
+      <tr><th><td style="width:50%;">L</td><td style="width:50%;"><%= l(:shortcuts_help_log_time_issue) %></td></tr>
+      <tr><th><td style="width:50%;">Q</td><td style="width:50%;"><%= l(:shortcuts_help_quote_issue) %></td></tr>
+      <tr><th><td style="width:50%;">U</td><td style="width:50%;"><%= l(:shortcuts_help_unwatch_issue) %></td></tr>
+      <tr><th><td style="width:50%;">W</td><td style="width:50%;"><%= l(:shortcuts_help_watch_issue) %></td></tr>
+    </table>
+    <table style="width:100%">
+      <% if @text_formatting == 'textile' %>
+      <tr><th colspan="3"><%= l(:shortcuts_help_editor) %></th></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_ins.png" style="border: 1px solid #bbb;" alt="Underline" /></th><td>CTRL + U</td><td><ins><%= l(:shortcuts_help_underline) %></ins></td></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
+      <% elsif @text_formatting == 'markdown' %>
+      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
+      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
+      <% end %>
+    </table>
   </body>
 </html>

@@ -3,3 +3,20 @@ en:
   shortcuts_settings_enable_in_issues: Enable issue shortcuts
   shortcuts_settings_enable_in_editor: Enable editor shortcuts
   shortcuts_settings_enable_help_link: Enable help link
+  shortcuts_settings_help_link_label: Help link label
+  shortcuts_help_title: Redmine Shortcuts Quick Reference
+  shortcuts_help_issue_index: Issues index
+  shortcuts_help_issue_show: Issue show
+  shortcuts_help_editor: Editor
+  shortcuts_help_new_issue: New
+  shortcuts_help_copy_issue: Copy
+  shortcuts_help_delete_issue: Delete
+  shortcuts_help_edit_issue: Edit
+  shortcuts_help_log_time_issue: Log time
+  shortcuts_help_quote_issue: Quote
+  shortcuts_help_unwatch_issue: Unwatch
+  shortcuts_help_watch_issue: Watch
+  shortcuts_help_strong: Strong
+  shortcuts_help_italic: Italic
+  shortcuts_help_underline: Underline
+  shortcuts_help_deleted: Deleted
