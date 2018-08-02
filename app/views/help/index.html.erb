@@ -22,16 +22,16 @@
       <tr><th><td style="width:50%;">W</td><td style="width:50%;"><%= l(:shortcuts_help_watch_issue) %></td></tr>
     </table>
     <table style="width:100%">
-      <% if @text_formatting == 'textile' %>
       <tr><th colspan="3"><%= l(:shortcuts_help_editor) %></th></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_ins.png" style="border: 1px solid #bbb;" alt="Underline" /></th><td>CTRL + U</td><td><ins><%= l(:shortcuts_help_underline) %></ins></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
+      <% if @text_formatting == 'textile' %>
+      <tr><th><%= image_tag 'bt_strong.png', :plugin => 'redmine_shortcuts', :alt => 'Strong', :style => 'border: 1px solid #bbb;' %></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
+      <tr><th><%= image_tag 'bt_em.png', :plugin => 'redmine_shortcuts', :alt => 'Italic', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
+      <tr><th><%= image_tag 'bt_ins.png', :plugin => 'redmine_shortcuts', :alt => 'Underline', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + U</td><td><ins><%= l(:shortcuts_help_underline) %></ins></td></tr>
+      <tr><th><%= image_tag 'bt_del.png', :plugin => 'redmine_shortcuts', :alt => 'Deleted', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
       <% elsif @text_formatting == 'markdown' %>
-      <tr><th><img src="../../images/jstoolbar/bt_strong.png" style="border: 1px solid #bbb;" alt="Strong" /></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_em.png" style="border: 1px solid #bbb;" alt="Italic" /></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
-      <tr><th><img src="../../images/jstoolbar/bt_del.png" style="border: 1px solid #bbb;" alt="Deleted" /></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
+      <tr><th><%= image_tag 'bt_strong.png', :plugin => 'redmine_shortcuts', :alt => 'Strong', :style => 'border: 1px solid #bbb;' %></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
+      <tr><th><%= image_tag 'bt_em.png', :plugin => 'redmine_shortcuts', :alt => 'Italic', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
+      <tr><th><%= image_tag 'bt_del.png', :plugin => 'redmine_shortcuts', :alt => 'Deleted', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
       <% end %>
     </table>
   </body>
