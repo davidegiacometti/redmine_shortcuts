@@ -5,6 +5,8 @@ function styleSelectedText(textarea, string) {
     $content = $content.slice(0, $start) + string + $content.slice($start, $end) + string +  $content.slice($end, $content.length);
     textarea.val($content);
     textarea.focus();
+    textarea.prop('selectionStart', $end + string.length * 2);
+    textarea.prop('selectionEnd', $end + string.length * 2);
 } // styleSelectedText
 
 $(document).keydown(function(e) {
