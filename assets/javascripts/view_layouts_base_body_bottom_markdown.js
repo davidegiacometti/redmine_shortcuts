@@ -11,18 +11,20 @@ function styleSelectedText(textarea, string) {
 
 $(document).keydown(function(e) {
     if($(document.activeElement).hasClass('wiki-edit')) {
-        // CTRL + B
-        if(e.ctrlKey && e.keyCode == 66) {
-            styleSelectedText($(document.activeElement), '**')
-            e.preventDefault();
-        // CTRL + S
-        } else if(e.ctrlKey && e.keyCode == 83) {
-            styleSelectedText($(document.activeElement), '~~')
-            e.preventDefault();
-        // CTRL + I
-        } else if(e.ctrlKey && e.keyCode == 73) {
-            styleSelectedText($(document.activeElement), '*')
-            e.preventDefault();
+        if(e.ctrlKey || e.metaKey) {
+            // CTRL/CMD + B
+            if(e.keyCode == 66) {
+                styleSelectedText($(document.activeElement), '**')
+                e.preventDefault();
+            // CTRL/CMD + S
+            } else if(e.keyCode == 83) {
+                styleSelectedText($(document.activeElement), '~~')
+                e.preventDefault();
+            // CTRL/CMD + I
+            } else if(e.keyCode == 73) {
+                styleSelectedText($(document.activeElement), '*')
+                e.preventDefault();
+            } // if
         } // if
     } // if
 });
