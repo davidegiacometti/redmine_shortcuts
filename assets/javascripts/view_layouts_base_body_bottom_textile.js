@@ -14,21 +14,25 @@ $(document).keydown(function(e) {
         if(e.ctrlKey || e.metaKey) {
             // CTRL/CMD + B
             if(e.keyCode == 66) {
-                styleSelectedText($(document.activeElement), '*')
+                styleSelectedText($(document.activeElement), '*');
                 e.preventDefault();
             // CTRL/CMD + S
             } else if(e.keyCode == 83) {
-                styleSelectedText($(document.activeElement), '-')
+                styleSelectedText($(document.activeElement), '-');
                 e.preventDefault();
             // CTRL/CMD + U
             } else if(e.keyCode == 85) {
-                styleSelectedText($(document.activeElement), '+')
+                styleSelectedText($(document.activeElement), '+');
                 e.preventDefault();
             // CTRL/CMD + I
             } else if(e.keyCode == 73) {
-                styleSelectedText($(document.activeElement), '_')
+                styleSelectedText($(document.activeElement), '_');
                 e.preventDefault();
-            } // if
+            // CTRL/CMD + ENTER
+            } else if(e.keyCode == 13) {
+                $(document.activeElement).closest('form').submit();
+                e.preventDefault();
+            } // if-else
         } // if
     } // if
 });
