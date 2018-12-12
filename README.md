@@ -20,9 +20,10 @@ On editor
 * **CTRL + I** italic
 * **CTRL + S** deleted
 * **CTRL + U** underline (textile only)
+* **CTRL + Enter** submit
 
 ## Supported versions
-The plugin has been developed and tested on Redmine 3.4.x but should also works on previous versions.
+The plugin has been developed and tested on Redmine 3.4.x and 4.0.x but should also works on previous versions.
 Any feedback will be appreciated.
 
 ## Installation
