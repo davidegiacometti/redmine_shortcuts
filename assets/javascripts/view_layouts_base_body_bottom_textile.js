@@ -30,7 +30,10 @@ $(document).keydown(function(e) {
                 e.preventDefault();
             // CTRL/CMD + ENTER
             } else if(e.keyCode == 13) {
-                $(document.activeElement).closest('form').submit();
+                $activeElement = $(document.activeElement)
+                $activeElement.blur();
+                $('textarea').removeData('changed');
+                $activeElement.closest('form').submit();
                 e.preventDefault();
             } // if-else
         } // if
