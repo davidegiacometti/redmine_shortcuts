@@ -1,5 +1,5 @@
 // Question Mark.
-$questionMarkModal = $('<div class="question-mark-modal"><button class="question-mark--close" aria-label="Close">X</button></div>');
+$questionMarkModal = $('<div class="question-mark-modal"><span aria-label="Close" aria-role="button" class="question-mark--close"/></div>');
 $questionMarkModal.append('<iframe width="500px" height="500px" src="' + window.location.origin + '/redmine_shortcuts/help"></iframe>');
 $('body').append($questionMarkModal);
 $(document).on('keypress', function(e) {
