@@ -5,6 +5,7 @@ Simple Redmine plugin that provides keyboard shortcuts.
 
 Common
 * **S** search
+* **?** open help modal
 
 On issues index
 * **N** new issue
@@ -26,7 +27,7 @@ On editor
 * **CTRL + Enter** submit
 
 ## Supported versions
-The plugin has been developed and tested on Redmine 3.4.x and 4.0.x but should also works on previous versions.
+The plugin has been developed and tested on Redmine 3.4.x and 4.x but should also works on previous versions.
 Any feedback will be appreciated.
 
 ## Installation
@@ -35,6 +36,7 @@ Just download the latest release of this plugin and extract in #{RAILS_ROOT}/plu
 ## Contributors
 * **[tofi86](https://github.com/tofi86)**
 * **[loxway](https://github.com/loxway)**
+* **[kporras07](https://github.com/kporras07)**
 
 ## License
 Released under the MIT License.
