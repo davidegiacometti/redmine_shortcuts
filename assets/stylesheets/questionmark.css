@@ -1,0 +1,40 @@
+.question-mark-modal {
+  display: none;
+}
+.question-mark-modal-visible {
+  display: block;
+  height: auto;
+  width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background: #FFF;
+  margin-left: -250px;
+  margin-top: -250px;
+}
+
+.question-mark--close {
+  cursor: pointer;
+}
+
+.question-mark--close:after, .question-mark--close:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-top: 1px solid #000;
+  position: absolute;
+  top: 7px;
+  right: -8px;
+  margin-right: 20px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+}
+
+.question-mark--close:before {
+  right: 6px;
+  transform: rotate(45deg);
+}
+
+.question-mark--close:hover {
+  opacity: 0.3;
+}
