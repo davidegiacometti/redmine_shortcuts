@@ -7,7 +7,7 @@ $(document).on('keypress', function(e) {
   var charCode = e.keyCode || e.which;
   // 63 = '?' key
   if (charCode === 63 && !$(':focus').is('textarea, input')) {
-    $questionMarkModal.addClass('question-mark-modal-visible');
+    $questionMarkModal.toggleClass('question-mark-modal-visible');
   }
 });
 $(document).on('keyup', function(e) {
