@@ -4,7 +4,9 @@
   <% elsif Setting['text_formatting'] == 'markdown' %>
     <%= javascript_include_tag 'view_layouts_base_body_bottom_markdown', :plugin => 'redmine_shortcuts' %>
   <% end %>
-  <%= javascript_include_tag 'view_layouts_base_body_bottom_questionmark', :plugin => 'redmine_shortcuts' %>
-  <%= stylesheet_link_tag 'questionmark', :plugin => 'redmine_shortcuts' %>
+  <% if User.current.id != 2 %>
+    <%= javascript_include_tag 'view_layouts_base_body_bottom_questionmark', :plugin => 'redmine_shortcuts' %>
+    <%= stylesheet_link_tag 'questionmark', :plugin => 'redmine_shortcuts', media: "all" %>
+  <% end %>
 
 <% end %>
