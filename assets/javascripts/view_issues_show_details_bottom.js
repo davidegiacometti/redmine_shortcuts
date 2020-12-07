@@ -33,7 +33,7 @@ $(document).keydown(function (e) {
             if (e.keyCode == 67) {
                 processLink($('.icon-copy').first());
                 e.preventDefault();
-                // D
+            // D
             } else if (e.keyCode == 68) {
                 var link = $('.icon-del').first();
                 var dataConfirm = link.attr('data-confirm');
@@ -44,23 +44,23 @@ $(document).keydown(function (e) {
                 }
                 processLink(link, '/issues');
                 e.preventDefault();
-                // E
+            // E
             } else if (e.keyCode == 69) {
                 processLink($('.icon-edit').first());
                 e.preventDefault();
-                // L
+            // L
             } else if (e.keyCode == 76) {
                 processLink($('.icon-time-add').first());
                 e.preventDefault();
-                // W
+            // W
             } else if (e.keyCode == 87) {
                 processLink($('.icon-fav-off').first());
                 e.preventDefault();
-                // U
+            // U
             } else if (e.keyCode == 85) {
                 processLink($('.icon-fav').first());
                 e.preventDefault();
-                // Q
+            // Q
             } else if (e.keyCode == 81) {
                 processLink($('.icon-comment').first());
                 e.preventDefault();

@@ -16,15 +16,19 @@ $(document).keydown(function (e) {
             if (e.keyCode == 66) {
                 styleSelectedText($(document.activeElement), '**');
                 e.preventDefault();
-                // CTRL/CMD + S
+            // CTRL/CMD + S
             } else if (e.keyCode == 83) {
                 styleSelectedText($(document.activeElement), '~~');
                 e.preventDefault();
-                // CTRL/CMD + I
+            // CTRL/CMD + U
+            } else if (e.keyCode == 85) {
+                styleSelectedText($(document.activeElement), '_');
+                e.preventDefault();
+            // CTRL/CMD + I
             } else if (e.keyCode == 73) {
                 styleSelectedText($(document.activeElement), '*');
                 e.preventDefault();
-                // CTRL/CMD + ENTER
+            // CTRL/CMD + ENTER
             } else if (e.keyCode == 13) {
                 $activeElement = $(document.activeElement)
                 $activeElement.blur();
