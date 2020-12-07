@@ -1,12 +1,16 @@
-function styleSelectedText(textarea, string) {
+function styleSelectedText(textarea, prepend, append) {
+    if (append == undefined) {
+        append = prepend;
+    }
+
     $start = textarea.prop('selectionStart');
     $end = textarea.prop('selectionEnd');
     $content = textarea.val();
-    $content = $content.slice(0, $start) + string + $content.slice($start, $end) + string + $content.slice($end, $content.length);
+    $content = $content.slice(0, $start) + prepend + $content.slice($start, $end) + append + $content.slice($end, $content.length);
     textarea.val($content);
     textarea.focus();
-    textarea.prop('selectionStart', $end + string.length * 2);
-    textarea.prop('selectionEnd', $end + string.length * 2);
+    textarea.prop('selectionStart', $start + prepend.length);
+    textarea.prop('selectionEnd', $end + append.length);
 }
 
 $(document).keydown(function (e) {
@@ -27,6 +31,14 @@ $(document).keydown(function (e) {
             // CTRL/CMD + I
             } else if (e.keyCode == 73) {
                 styleSelectedText($(document.activeElement), '*');
+                e.preventDefault();
+            // CTRL/CMD + L
+            } else if (e.keyCode == 76) {
+                styleSelectedText($(document.activeElement), '`');
+                e.preventDefault();
+            // CTRL/CMD + P
+            } else if (e.keyCode == 80) {
+                styleSelectedText($(document.activeElement), "```\n", "\n```");
                 e.preventDefault();
             // CTRL/CMD + ENTER
             } else if (e.keyCode == 13) {
