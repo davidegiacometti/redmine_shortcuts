@@ -6,11 +6,19 @@ function styleSelectedText(textarea, prepend, append) {
     $start = textarea.prop('selectionStart');
     $end = textarea.prop('selectionEnd');
     $content = textarea.val();
-    $content = $content.slice(0, $start) + prepend + $content.slice($start, $end) + append + $content.slice($end, $content.length);
-    textarea.val($content);
-    textarea.focus();
-    textarea.prop('selectionStart', $start + prepend.length);
-    textarea.prop('selectionEnd', $end + append.length);
+    if ($content.slice(0, $start).endsWith(prepend) && $content.slice($end, $content.length).replace("\n", '').startsWith(append.replace("\n", ''))) {
+        $content = $content.slice(0, $start - prepend.length) + $content.slice($start, $end) + $content.slice($end + append.length, $content.length);
+        textarea.val($content);
+        textarea.focus();
+        textarea.prop('selectionStart', $start - prepend.length);
+        textarea.prop('selectionEnd', $end - append.length);
+    } else {
+        $content = $content.slice(0, $start) + prepend + $content.slice($start, $end) + append + $content.slice($end, $content.length);
+        textarea.val($content);
+        textarea.focus();
+        textarea.prop('selectionStart', $start + prepend.length);
+        textarea.prop('selectionEnd', $end + append.length);
+    }
 }
 
 $(document).keydown(function (e) {
