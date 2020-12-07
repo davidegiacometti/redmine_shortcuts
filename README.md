@@ -23,7 +23,9 @@ On editor
 * **CTRL + B** strong
 * **CTRL + I** italic
 * **CTRL + S** deleted
-* **CTRL + U** underline (textile only)
+* **CTRL + U** underline
+* **CTRL + L** inline code
+* **CTRL + P** preformatted text
 * **CTRL + Enter** submit
 
 ## Supported versions
