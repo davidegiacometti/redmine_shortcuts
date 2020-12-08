@@ -1,0 +1,27 @@
+# Polish strings go here for Rails i18n
+pl:
+  shortcuts_settings_enable_in_issues: Włącz skróty klawiszowe dla zagadnień
+  shortcuts_settings_enable_in_editor: Włącz skróty klawiszowe w edytorze
+  shortcuts_settings_enable_help_link: Dodaj link pomocy w menu
+  shortcuts_settings_help_link_label: Etykieta linku pomocy
+  shortcuts_help_title: Lista skrótów klawiszowych Redmine Shortcuts
+  shortcuts_help_issue_index: Widok listy zagadnień
+  shortcuts_help_issue_show: Widok zagadnienia
+  shortcuts_help_editor: Edytor
+  shortcuts_help_new_issue: Nowe zagadnienie
+  shortcuts_help_copy_issue: Kopia
+  shortcuts_help_delete_issue: Usuń
+  shortcuts_help_edit_issue: Edytuj
+  shortcuts_help_log_time_issue: Dziennik czasu
+  shortcuts_help_quote_issue: Cytuj
+  shortcuts_help_unwatch_issue: Nie obserwuj
+  shortcuts_help_watch_issue: Obserwuj
+  shortcuts_help_strong: Pogrubienie
+  shortcuts_help_italic: Kursywa
+  shortcuts_help_underline: Podkreślenie
+  shortcuts_help_deleted: Przekreślenie
+  shortcuts_help_submit: Wyślij
+  shortcuts_help_common: Ogólne
+  shortcuts_help_search: Szukaj
+  shortcuts_inline_code: Wstawka kodu
+  shortcuts_preformatted_text: Tekst preformatowany
