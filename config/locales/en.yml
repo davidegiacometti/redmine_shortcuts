@@ -3,6 +3,7 @@ en:
   shortcuts_settings_enable_in_issues: Enable issue shortcuts
   shortcuts_settings_enable_in_editor: Enable editor shortcuts
   shortcuts_settings_enable_help_link: Enable help link
+  shortcuts_settings_enable_help_modal: Enable help modal
   shortcuts_settings_help_link_label: Help link label
   shortcuts_help_title: Redmine Shortcuts Quick Reference
   shortcuts_help_issue_index: Issues index

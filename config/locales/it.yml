@@ -3,6 +3,7 @@ it:
   shortcuts_settings_enable_in_issues: Abilita scorciatoie nelle segnalazioni
   shortcuts_settings_enable_in_editor: Abilita scorciatoie nell'editor
   shortcuts_settings_enable_help_link: Abilita link aiuto
+  shortcuts_settings_enable_help_modal: Abilita modale aiuto
   shortcuts_settings_help_link_label: Etichetta link aiuto
   shortcuts_help_title: Guida Rapida Redmine Shortcuts
   shortcuts_help_issue_index: Elenco segnalazioni

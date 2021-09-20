@@ -3,14 +3,18 @@
   <%= check_box_tag 'settings[enable_issue_shortcuts]', '1', @settings['enable_issue_shortcuts'] %>
 </td>
 <p>
-  <label><%= l(:shortcuts_settings_enable_in_editor) %></b></label>
+  <label><%= l(:shortcuts_settings_enable_in_editor) %></label>
   <%= check_box_tag 'settings[enable_editor_shortcuts]', '1', @settings['enable_editor_shortcuts'] %>
 </p>
 <p>
-  <label><%= l(:shortcuts_settings_enable_help_link) %></b></label>
+  <label><%= l(:shortcuts_settings_enable_help_link) %></label>
   <%= check_box_tag 'settings[enable_help_link]', '1', @settings['enable_help_link'] %>
 </p>
 <p>
-  <label><%= l(:shortcuts_settings_help_link_label) %></b></label>
+  <label><%= l(:shortcuts_settings_enable_help_modal) %></label>
+  <%= check_box_tag 'settings[enable_help_modal]', '1', @settings['enable_help_modal'] %>
+</p>
+<p>
+  <label><%= l(:shortcuts_settings_help_link_label) %></label>
   <%= text_field_tag 'settings[help_link_label]', @settings['help_link_label'].blank? ? 'Shortcuts' : @settings['help_link_label'], :required => true %>
 </p>

@@ -39,6 +39,7 @@ Just download the latest release of this plugin and extract in #{RAILS_ROOT}/plu
 * **[tofi86](https://github.com/tofi86)**
 * **[loxway](https://github.com/loxway)**
 * **[kporras07](https://github.com/kporras07)**
+* **[pkonopelko](https://github.com/pkonopelko)**
 
 ## License
 Released under the MIT License.
