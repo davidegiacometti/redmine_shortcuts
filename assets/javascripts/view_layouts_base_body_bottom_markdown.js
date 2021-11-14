@@ -23,7 +23,7 @@ function styleSelectedText(textarea, prepend, append) {
 
 $(document).keydown(function (e) {
     if ($(document.activeElement).hasClass('wiki-edit')) {
-        if (e.ctrlKey || e.metaKey) {
+        if ((e.ctrlKey || e.metaKey) && !e.shiftKey) {
             // CTRL/CMD + B
             if (e.keyCode == 66) {
                 styleSelectedText($(document.activeElement), '**');
