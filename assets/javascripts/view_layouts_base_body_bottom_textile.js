@@ -12,13 +12,13 @@ function styleSelectedText(textarea, prepend, append) {
         textarea.focus();
         textarea.prop('selectionStart', $start - prepend.length);
         var end =  
-        textarea.prop('selectionEnd', $end - (append == "\n</pre>" ? append.replace("\n", '').length : append.length));
+        textarea.prop('selectionEnd', $end - prepend.length);
     } else {
         $content = $content.slice(0, $start) + prepend + $content.slice($start, $end) + append + $content.slice($end, $content.length);
         textarea.val($content);
         textarea.focus();
         textarea.prop('selectionStart', $start + prepend.length);
-        textarea.prop('selectionEnd', $end + (append == "\n</pre>" ? append.replace("\n", '').length : append.length));
+        textarea.prop('selectionEnd', $end + prepend.length);
     }
 }
 
