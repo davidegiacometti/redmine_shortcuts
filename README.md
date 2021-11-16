@@ -36,10 +36,12 @@ Any feedback will be appreciated.
 Just download the latest release of this plugin and extract in #{RAILS_ROOT}/plugins, no migrations or gem installation required. Restart Redmine.
 
 ## Contributors
-* **[tofi86](https://github.com/tofi86)**
-* **[loxway](https://github.com/loxway)**
+* **[jcormier](https://github.com/jcormier)**
 * **[kporras07](https://github.com/kporras07)**
+* **[loxway](https://github.com/loxway)**
 * **[pkonopelko](https://github.com/pkonopelko)**
+* **[tofi86](https://github.com/tofi86)**
+
 
 ## License
 Released under the MIT License.
