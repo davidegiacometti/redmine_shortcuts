@@ -1,4 +1,4 @@
-require 'redmine_shortcuts/hooks/hooks'
+require File.dirname(__FILE__) + '/lib/redmine_shortcuts/hooks/hooks.rb'
 
 Redmine::Plugin.register :redmine_shortcuts do
   name 'Redmine Shortcuts'

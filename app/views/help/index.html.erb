@@ -25,12 +25,14 @@
       <tr><th><td style="width:50%;">U</td><td style="width:50%;"><%= l(:shortcuts_help_unwatch_issue) %></td></tr>
       <tr><th><td style="width:50%;">W</td><td style="width:50%;"><%= l(:shortcuts_help_watch_issue) %></td></tr>
     </table>
-    <% if @text_formatting == 'textile' || @text_formatting == 'markdown' %>
+    <% if @text_formatting == 'textile' || @text_formatting == 'markdown' || @text_formatting == 'common_mark' %>
     <table style="width:100%">
       <tr><th colspan="3"><%= l(:shortcuts_help_editor) %></th></tr>
       <tr><th><%= image_tag 'bt_strong.png', :plugin => 'redmine_shortcuts', :alt => 'Strong', :style => 'border: 1px solid #bbb;' %></th><td style="width:50%;">CTRL + B</td><td style="width:50%;"><strong><%= l(:shortcuts_help_strong) %></strong></td></tr>
       <tr><th><%= image_tag 'bt_em.png', :plugin => 'redmine_shortcuts', :alt => 'Italic', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + I</td><td><em><%= l(:shortcuts_help_italic) %></em></td></tr>
+      <% if @text_formatting != 'common_mark' %>
       <tr><th><%= image_tag 'bt_ins.png', :plugin => 'redmine_shortcuts', :alt => 'Underline', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + U</td><td><ins><%= l(:shortcuts_help_underline) %></ins></td></tr>
+      <% end %>
       <tr><th><%= image_tag 'bt_del.png', :plugin => 'redmine_shortcuts', :alt => 'Deleted', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + S</td><td><del><%= l(:shortcuts_help_deleted) %></del></td></tr>
       <tr><th><%= image_tag 'bt_code.png', :plugin => 'redmine_shortcuts', :alt => 'Inline code', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + L</td><td><code><%= l(:shortcuts_inline_code) %></code></td></tr>
       <tr><th><%= image_tag 'bt_pre.png', :plugin => 'redmine_shortcuts', :alt => 'Preformatted text', :style => 'border: 1px solid #bbb;' %></th><td>CTRL + P</td><td><code><%= l(:shortcuts_preformatted_text) %></code></td></tr>
