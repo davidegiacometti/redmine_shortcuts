@@ -29,7 +29,7 @@ On editor
 * **CTRL + Enter** submit
 
 ## Supported versions
-The plugin has been developed and tested on Redmine 3.4.x and 4.x but should also works on previous versions.
+The plugin has been developed and tested on Redmine 3.4.x, 4.x and 5.x but should also works on previous versions.
 Any feedback will be appreciated.
 
 ## Installation
